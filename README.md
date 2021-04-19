@@ -1,0 +1,1 @@
+nohup bash -x kmedoid.sh MEDIAN 100 /mnt/c/Users/33646/Desktop/Lille/bourse/bourse.jpg /mnt/c/Users/33646/Desktop/Lille/bourse/bourse 3 5 8 10 20 50 100 200 > /var/log/bourse.log 2>&1 &
