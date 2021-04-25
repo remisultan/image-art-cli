@@ -22,13 +22,11 @@
     <exec.mainClass>org.rsultan.app.ImageArtCliCommand</exec.mainClass>
   </properties>
 
-
-
   <dependencies>
     <dependency>
       <groupId>org.rsultan</groupId>
       <artifactId>java-ml</artifactId>
-      <version>1.1.1-SNAPSHOT</version>
+      <version>1.1.1</version>
     </dependency>
     <dependency>
       <groupId>io.micronaut</groupId>
@@ -89,13 +87,6 @@
   </dependencies>
 
   <build>
-    <extensions>
-      <extension>
-        <groupId>com.gkatzioura.maven.cloud</groupId>
-        <artifactId>google-storage-wagon</artifactId>
-        <version>1.0</version>
-      </extension>
-    </extensions>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

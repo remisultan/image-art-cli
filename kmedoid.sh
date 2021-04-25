@@ -23,7 +23,7 @@ for k in "$@"; do
       -t "${medoid_type}" \
       -k "${k}" \
       -e "${epochs}" \
-      -f -s 0.3 \
+      -f -s 0.1 \
       -i "${input_file}" \
       -o "${output_prefix}_${k}_${medoid_type}_${epochs}.png"
 done
