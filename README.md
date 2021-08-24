@@ -6,7 +6,10 @@ series of photos per 'K' training.
   
 You can end up having a series of image looking like these:
 
-<img src="http://i.freegifmaker.me/1/6/1/9/3/6/16193612803013985.gif" width="200" height="200"> <img src="http://freegifmaker.me/img/res/1/6/1/9/3/6/1619362359631570.gif" width="200" height="200"> <img src="http://freegifmaker.me/img/res/1/6/1/9/3/6/16193624643013935.gif" width="200" height="200"> <img src="http://freegifmaker.me/img/res/1/6/1/9/3/6/161936643763157.gif" width="200" height="200">
+![](gifs/me.gif") 
+![](gifs/quais.gif") 
+![](gifs/spain.gif") 
+![](gifs/sky-pan.gif")
 
 ## Requirements
 
