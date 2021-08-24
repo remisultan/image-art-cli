@@ -6,10 +6,10 @@ series of photos per 'K' training.
   
 You can end up having a series of image looking like these:
 
-![](gifs/me.gif") 
-![](gifs/quais.gif") 
-![](gifs/spain.gif") 
-![](gifs/sky-pan.gif")
+![](gifs/me.gif) 
+![](gifs/quais.gif) 
+![](gifs/spain.gif) 
+![](gifs/sky-pan.gif)
 
 ## Requirements
 
