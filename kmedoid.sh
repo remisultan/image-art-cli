@@ -6,7 +6,7 @@ export OMP_NUM_THREADS=12
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 JAVA_OPTS="$JAVA_OPTS -Djava.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib:${SCRIPT_DIR}/target/lib/"
-JAVA_OPTS="$JAVA_OPTS -DXmx=3G -Dorg.bytedeco.javacpp.maxphysicalbytes=10G --enable-preview"
+JAVA_OPTS="$JAVA_OPTS -DXmx=11G -Dorg.bytedeco.javacpp.maxphysicalbytes=12G --enable-preview"
 
 medoid_type=$1
 epochs=$2
