@@ -32,14 +32,5 @@ Clone the repo and execute this
  $ bash -x pca.sh /path/to/file.jpg /path/to/file/prefix 200 250 300 350 460 512
 ```
 
-```
-usage : bash -x kmedoid.sh \
-    [algorithm type: MEAN|MEDIAN] \
-    [number of epochs for training] \
-    [image to process] \
-    [image output prefix] \ 
-    [list of 'k' you want to use]
-```
-
 Good luck !
 
