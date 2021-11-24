@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.nio.file.Paths;
 import javax.inject.Inject;
-import org.rsultan.app.convert.ImageToDataframe;
+import org.rsultan.app.convert.ImageToRGBDataframe;
 import org.rsultan.app.convert.KMedoidToImage;
 import org.rsultan.app.domain.KMedoidsWrapper;
 import org.rsultan.app.service.ImageService;
@@ -25,10 +25,6 @@ public class KMedoidCommand extends IOFileCommand implements Runnable {
   private static final String MEDOID_DESC = "the type of KMedoid you want to apply";
   private static final String K_DESC = "the number of clusters you wish to have";
   private static final String EPOCHS_DESC = "the number of epochs you want to train";
-  private static final String FAST_DESC = "train on a resized image";
-  private static final String SCALING_FACTOR_DESC =
-      "the scaling factor of your image (useful only with -f) "
-          + "your images will get bigger if value > 1 and this won't be faster";
 
   @Option(names = {"-t", "--type"}, description = MEDOID_DESC, required = true)
   MedoidType medoidType;
@@ -39,16 +35,6 @@ public class KMedoidCommand extends IOFileCommand implements Runnable {
   @Option(names = {"-e", "--epochs"}, description = EPOCHS_DESC, required = true)
   int epoch;
 
-  @Option(names = {"-f", "--fast"}, description = FAST_DESC)
-  boolean fast;
-
-  @Option(
-      names = {"-s", "--scaling-factor"},
-      description = SCALING_FACTOR_DESC,
-      defaultValue = "0.1"
-  )
-  double scalingFactor;
-
   @Inject
   private KMedoidService kMedoidsService;
 
@@ -56,7 +42,7 @@ public class KMedoidCommand extends IOFileCommand implements Runnable {
   private ImageService imageService;
 
   @Inject
-  private ImageToDataframe imageToDataframe;
+  private ImageToRGBDataframe imageToDataframe;
 
   @Inject
   private KMedoidToImage kMedoidsToImage;

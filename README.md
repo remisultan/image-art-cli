@@ -20,10 +20,16 @@ You can end up having a series of image looking like these:
 
 Clone the repo and execute this
 
+### Kmeans / kMedians
 ```bash
  $ ./mvnw clean install
- $ nohup bash -x kmedoid.sh MEAN 100 /path/to/file.jpg /path/to/file/prefix 3 5 8 10 20 50 100 200 > /path/to/log/file.log 2>&1 &
- $ tail -f /path/to/log/file.log
+ $ bash -x kmedoid.sh MEAN 100 /path/to/file.jpg /path/to/file/prefix 3 5 8 10 20 50 100 200
+```
+
+### Principal Component Analysis
+```bash
+ $ ./mvnw clean install
+ $ bash -x pca.sh /path/to/file.jpg /path/to/file/prefix 200 250 300 350 460 512
 ```
 
 ```

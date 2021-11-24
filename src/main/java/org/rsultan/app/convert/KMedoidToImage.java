@@ -35,6 +35,11 @@ public class KMedoidToImage implements Converter<BufferedImage, KMedoidsWrapper>
     return outImage;
   }
 
+  @Override
+  public KMedoidsWrapper revert(BufferedImage target) {
+    throw new RuntimeException("Not implemented");
+  }
+
   private Color getColor(INDArray rgba) {
     int red = rgba.getInt(0);
     int green = rgba.getInt(1);
