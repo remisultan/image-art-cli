@@ -23,8 +23,8 @@
 
   <properties>
     <packaging>jar</packaging>
-    <jdk.version>16</jdk.version>
-    <release.version>16</release.version>
+    <jdk.version>17</jdk.version>
+    <release.version>17</release.version>
     <micronaut.version>2.4.2</micronaut.version>
     <exec.mainClass>org.rsultan.app.ImageArtCliCommand</exec.mainClass>
   </properties>
@@ -33,7 +33,7 @@
     <dependency>
       <groupId>org.rsultan</groupId>
       <artifactId>java-ml</artifactId>
-      <version>2.1.3</version>
+      <version>2.2.2</version>
     </dependency>
     <dependency>
       <groupId>io.micronaut</groupId>
@@ -99,7 +99,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <compilerArgs>--enable-preview</compilerArgs>
           <!-- Uncomment to enable incremental compilation -->
           <!-- <useIncrementalCompilation>false</useIncrementalCompilation> -->
           <annotationProcessorPaths combine.children="append">
@@ -109,8 +108,8 @@
               <version>${picocli.version}</version>
             </path>
           </annotationProcessorPaths>
-          <source>16</source>
-          <target>16</target>
+          <source>${jdk.version}</source>
+          <target>${jdk.version}</target>
         </configuration>
       </plugin>
 

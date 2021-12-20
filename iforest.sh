@@ -8,8 +8,9 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 JAVA_OPTS="$JAVA_OPTS -Djava.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib:${SCRIPT_DIR}/target/lib/"
 JAVA_OPTS="$JAVA_OPTS -DXmx=21G -Dorg.bytedeco.javacpp.maxphysicalbytes=22G --enable-preview"
 
-input_file=$1
-output_prefix=$2
+type=$1
+input_file=$2
+output_prefix=$3
 
 shift 2
 
@@ -17,6 +18,6 @@ for n in "$@"; do
   echo "$n"
   java $JAVA_OPTS \
       -cp "${SCRIPT_DIR}/target/image-art-cli-0.1.jar:`find target/lib | xargs -I {} echo "$SCRIPT_DIR/{}" | paste -d":" -s`" \
-       org.rsultan.app.ImageArtCliCommand pca -n "${n}" -i "${input_file}" -o "${output_prefix}_${n}.png"
+       org.rsultan.app.ImageArtCliCommand iforest -n "${n}" -t ${type} -i "${input_file}" -o "${output_prefix}_${n}.png"
 done
 

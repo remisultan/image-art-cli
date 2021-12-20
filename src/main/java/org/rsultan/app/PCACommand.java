@@ -55,9 +55,9 @@ public class PCACommand extends IOFileCommand implements Runnable {
               .train(trainDataframe);
       PCA.predict(trainDataframe).tail();
       LOG.info("Training ended");
-      var outputImage = imageToDataframe.revert(PCA.reconstruct());
-      LOG.info("Building output image");
 
+      LOG.info("Building output image");
+      var outputImage = imageToDataframe.revert(PCA.reconstruct());
       LOG.info("Output image built");
 
       LOG.info("Writing output image {}", outputFile);

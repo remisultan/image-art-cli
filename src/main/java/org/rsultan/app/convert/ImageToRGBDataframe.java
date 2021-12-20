@@ -37,6 +37,6 @@ public class ImageToRGBDataframe implements Converter<Dataframe, BufferedImage> 
 
   @Override
   public BufferedImage revert(Dataframe target) {
-    throw new RuntimeException("Not implemented");
+    return null;
   }
 }

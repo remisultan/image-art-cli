@@ -5,7 +5,7 @@ import org.nd4j.linalg.api.buffer.DataType;
 import org.nd4j.linalg.factory.Nd4j;
 import picocli.CommandLine.Command;
 
-@Command(name = "image-art", subcommands = {KMedoidCommand.class, PCACommand.class}, mixinStandardHelpOptions = true)
+@Command(name = "image-art", subcommands = {KMedoidCommand.class, PCACommand.class, IsolationForestCommand.class}, mixinStandardHelpOptions = true)
 public class ImageArtCliCommand implements Runnable {
 
   public static void main(String[] args) {
