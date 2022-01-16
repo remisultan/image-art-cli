@@ -16,7 +16,7 @@ You can end up having a series of image looking like these:
 ## Requirements
 
 - JDK17+
-- [remisultan/java-ml](https://github.com/remisultan/java-ml) repository
+- [remisultan/java-ml](https://github.com/remisultan/java-ml) repository (Make sure to build the project above with the correct version before running this project)
 
 ## Getting started
 

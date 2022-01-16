@@ -12,7 +12,7 @@ type=$1
 input_file=$2
 output_prefix=$3
 
-shift 2
+shift 3
 
 for n in "$@"; do
   echo "$n"
